@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="世界图鉴官方技术支持、常见问题与隐私政策。">
+  <meta name="color-scheme" content="light dark">
+  <title>世界图鉴｜技术支持</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f2ea;
+      --card: rgba(255, 255, 255, .82);
+      --text: #1e1c19;
+      --muted: #6e675f;
+      --line: rgba(30, 28, 25, .10);
+      --red: #e64637;
+      --green: #147a58;
+      --shadow: 0 18px 50px rgba(56, 42, 26, .10);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 12% 0%, rgba(230, 70, 55, .16), transparent 32rem),
+        radial-gradient(circle at 92% 18%, rgba(20, 122, 88, .15), transparent 30rem),
+        var(--bg);
+      line-height: 1.7;
+    }
+
+    a { color: var(--green); }
+
+    .page {
+      width: min(760px, calc(100% - 36px));
+      margin: 0 auto;
+      padding: 56px 0 72px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-bottom: 30px;
+    }
+
+    .icon {
+      width: 82px;
+      height: 82px;
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+    }
+
+    h1, h2, p { margin-top: 0; }
+    h1 { margin-bottom: 4px; font-size: clamp(30px, 6vw, 46px); line-height: 1.15; }
+    h2 { margin-bottom: 8px; font-size: 20px; line-height: 1.35; }
+    .subtitle, .muted { color: var(--muted); }
+    .subtitle { margin: 0; font-size: 17px; }
+
+    .intro, .support-card, details {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    .intro { padding: 26px; margin-bottom: 28px; }
+    .intro p:last-child { margin-bottom: 0; }
+
+    .faq-title { margin: 38px 0 14px; }
+
+    details { padding: 0 22px; margin-bottom: 12px; }
+    summary {
+      padding: 18px 0;
+      cursor: pointer;
+      font-weight: 650;
+      list-style: none;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; float: right; color: var(--red); font-size: 22px; line-height: 1; }
+    details[open] summary::after { content: "−"; }
+    details p { padding-bottom: 18px; margin-bottom: 0; color: var(--muted); }
+
+    .support-card { padding: 26px; margin-top: 30px; }
+
+    .button {
+      display: inline-block;
+      margin-top: 6px;
+      padding: 11px 18px;
+      border-radius: 999px;
+      color: white;
+      background: var(--green);
+      text-decoration: none;
+      font-weight: 650;
+    }
+
+    footer {
+      padding-top: 32px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    footer a { margin: 0 7px; }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #151713;
+        --card: rgba(35, 38, 32, .84);
+        --text: #f4f0e8;
+        --muted: #b8b1a7;
+        --line: rgba(255, 255, 255, .10);
+        --shadow: 0 18px 50px rgba(0, 0, 0, .22);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <img class="icon" src="app-icon.png" alt="世界图鉴应用图标">
+      <div>
+        <h1>世界图鉴</h1>
+        <p class="subtitle">技术支持与常见问题</p>
+      </div>
+    </header>
+
+    <section class="intro">
+      <h2>你好，欢迎来到世界图鉴支持中心</h2>
+      <p>世界图鉴是一款离线运行的私人收藏册。照片处理和图鉴记录都保存在你的设备上，不需要注册账号。</p>
+      <p class="muted">如果下面的说明没有解决问题，可在页面底部提交支持请求。</p>
+    </section>
+
+    <h2 class="faq-title">常见问题</h2>
+
+    <details open>
+      <summary>没有提取到照片主体怎么办？</summary>
+      <p>尽量让主体完整地出现在画面中，并与背景保持明显区别。光线充足、背景简洁的照片通常效果更好。如果系统无法分离主体，你仍可选择保留完整画面继续归档。</p>
+    </details>
+
+    <details>
+      <summary>相机无法打开怎么办？</summary>
+      <p>前往“系统设置 → 隐私与安全性 → 相机”，确认已允许世界图鉴使用相机。如果列表中暂时没有世界图鉴，请回到应用再次点击拍摄并响应系统权限提示。</p>
+    </details>
+
+    <details>
+      <summary>为什么没有自动填写地点？</summary>
+      <p>前往“系统设置 → 隐私与安全性 → 定位服务 → 世界图鉴”，选择“使用 App 期间”。你也可以不授予定位权限，改为在记录编辑页面手动选择地点。</p>
+    </details>
+
+    <details>
+      <summary>如何迁移或备份图鉴？</summary>
+      <p>在应用的“设置”中选择“导出备份”，将生成的 .worldatlas 文件保存到“文件”或其他安全位置。在另一台设备上安装世界图鉴后，选择“导入备份”即可恢复记录。</p>
+    </details>
+
+    <details>
+      <summary>如何删除记录或全部数据？</summary>
+      <p>你可以在图鉴中长按单条记录进行删除，也可以前往“设置”清除全部记录。删除前建议先导出备份；删除后的本地数据可能无法恢复。</p>
+    </details>
+
+    <details>
+      <summary>应用支持哪些设备？</summary>
+      <p>世界图鉴支持运行 iOS 17 或更高版本的 iPhone。相机功能需要在真机上使用。</p>
+    </details>
+
+    <section class="support-card">
+      <h2>仍然需要帮助？</h2>
+      <p>请提交问题，并附上 iPhone 型号、iOS 版本、应用版本以及问题出现时的操作步骤。请勿公开上传包含私人照片、精确位置或其他敏感信息的截图与备份文件。</p>
+      <a class="button" id="issue-link" href="https://github.com/" rel="noopener">提交支持请求</a>
+    </section>
+
+    <footer>
+      <a href="privacy-policy.html">隐私政策</a>
+      <span>·</span>
+      <span>© 2026 世界图鉴</span>
+    </footer>
+  </main>
+
+  <script>
+    (function () {
+      const hostParts = window.location.hostname.split(".");
+      const pathParts = window.location.pathname.split("/").filter(Boolean);
+      if (hostParts.length >= 3 && hostParts[1] === "github" && pathParts.length > 0) {
+        const owner = hostParts[0];
+        const repo = pathParts[0];
+        const title = encodeURIComponent("[支持] 请简要描述遇到的问题");
+        const body = encodeURIComponent("设备型号：\niOS 版本：\n应用版本：\n问题描述：\n复现步骤：\n\n请勿上传私人照片、精确位置或备份文件。");
+        document.getElementById("issue-link").href = `https://github.com/${owner}/${repo}/issues/new?title=${title}&body=${body}`;
+      }
+    }());
+  </script>
+</body>
+</html>
